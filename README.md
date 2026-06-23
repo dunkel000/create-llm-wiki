@@ -51,6 +51,7 @@ Use `raw/` only for source material. The LLM should read from this folder but sh
 Open your preferred agent in the wiki folder.
 
 For OpenAI Codex, start it from inside `my-llm-wiki/`. For Claude Code, do the same and use `CLAUDE.md` instead of `AGENTS.md` in the next step.
+For GitHub Copilot, use `.github/copilot-instructions.md`.
 
 ## Step 3: Give the Agent the LLM Wiki Idea File
 
@@ -68,8 +69,9 @@ Before creating or editing files, ask me:
 - how large I expect the source collection to become
 - what page types would be useful
 
-After I answer, create an AGENTS.md schema for OpenAI Codex, then initialize wiki/index.md and wiki/log.md.
+After I answer, create an  `.github/copilot-instructions.md` for Gihub Copilot, then initialize wiki/index.md and wiki/log.md.
 ```
+# After I answer, create an AGENTS.md schema for OpenAI Codex, then initialize wiki/index.md and wiki/log.md.
 
 If the agent cannot access the gist URL, paste the full contents of the gist into the chat after the prompt.
 
